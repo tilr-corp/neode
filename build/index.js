@@ -573,8 +573,6 @@ var Neode = function () {
     }], [{
         key: 'fromEnv',
         value: function fromEnv() {
-            require('dotenv').config();
-
             var connection_string = process.env.NEO4J_PROTOCOL + '://' + process.env.NEO4J_HOST + ':' + process.env.NEO4J_PORT;
             var username = process.env.NEO4J_USERNAME;
             var password = process.env.NEO4J_PASSWORD;

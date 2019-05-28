@@ -24,7 +24,6 @@
   "author": "Adam Cowley <github@adamcowley.co.uk>",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^4.0.0",
     "joi": "^13.7.0",
     "neo4j-driver": "^1.6.3",
     "uuid": "^3.3.2"
@@ -37,7 +36,7 @@
     "clear": "0.0.1",
     "eslint": "^4.19.1",
     "mocha": "^5.2.0",
-    "nyc": "^13.3.0"
+    "nyc": "^14.1.1"
   },
   "babel": {
     "presets": [

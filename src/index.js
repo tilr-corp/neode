@@ -38,8 +38,6 @@ export default class Neode {
      * @return {Neode}
      */
     static fromEnv() {
-        require('dotenv').config();
-
         const connection_string = `${process.env.NEO4J_PROTOCOL}://${process.env.NEO4J_HOST}:${process.env.NEO4J_PORT}`;
         const username = process.env.NEO4J_USERNAME;
         const password = process.env.NEO4J_PASSWORD;
