@@ -29,6 +29,8 @@ export default class Neode {
         this.factory = new Factory(this);
 
         this.setEnterprise(enterprise);
+
+        console.log(`[NEODE] connection to ${ connection_string }`)
     }
 
     /**
