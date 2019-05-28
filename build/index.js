@@ -70,6 +70,7 @@ var Neode = function () {
 
         _classCallCheck(this, Neode);
 
+        console.log('[NEODE] connection to ' + connection_string);
         var auth = username && password ? _neo4jDriver2.default.auth.basic(username, password) : null;
         this.driver = new _neo4jDriver2.default.driver(connection_string, auth, config);
         this.models = new _ModelMap2.default(this);

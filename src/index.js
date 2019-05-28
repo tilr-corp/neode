@@ -22,6 +22,7 @@ export default class Neode {
      * @return {Neode}
      */
     constructor(connection_string, username, password, enterprise = false, config = {}) {
+        console.log(`[NEODE] connection to ${ connection_string }`)
         const auth = username && password ? neo4j.auth.basic(username, password) : null;
         this.driver = new neo4j.driver(connection_string, auth, config);
         this.models = new ModelMap(this);
@@ -29,8 +30,6 @@ export default class Neode {
         this.factory = new Factory(this);
 
         this.setEnterprise(enterprise);
-
-        console.log(`[NEODE] connection to ${ connection_string }`)
     }
 
     /**
